@@ -32,7 +32,7 @@ describe Array do
         end
 
         it "returns pairs in least-to-greatest order by first index of each pair" do 
-            expect([-1, -2, -3, 2, 2, 1]).to eq([0,5], [1,4], [1,5])
+            expect([-1, -2, -3, 2, 2, 1].two_sum).to eq([[0,5], [1,4], [1,5]])
         end
     end
 end

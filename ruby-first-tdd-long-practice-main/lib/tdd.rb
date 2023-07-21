@@ -7,3 +7,16 @@ def my_uniq(arr)
     end
     new_arr
 end
+
+class Array
+    def two_sum
+        pairs_arr = []
+
+        (0...self.length).each do |i|
+            (0...self.length).each do |j|
+                pairs_arr << [i,j] if j > i && self[i] + self[j] == 0
+            end
+        end
+        pairs_arr
+    end
+end
