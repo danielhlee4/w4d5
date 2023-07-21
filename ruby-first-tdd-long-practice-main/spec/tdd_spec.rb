@@ -26,5 +26,13 @@ describe Array do
         it "returns empty array if no pairs sum to zero" do
             expect([-1, 0, 7, 2, -4].two_sum).to eq([])
         end
+
+        it "returns all pairs of indices whose elements sum to zero" do
+            expect([-1, 0, 2, -2, 1].two_sum).to eq([[0, 4], [2, 3]])
+        end
+
+        it "returns pairs in least-to-greatest order by first index of each pair" do 
+            expect([-1, -2, -3, 2, 2, 1]).to eq([0,5], [1,4], [1,5])
+        end
     end
 end
